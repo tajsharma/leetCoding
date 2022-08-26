@@ -3,7 +3,7 @@
 
 //Solutuion for lc #136: single number
 //checks if every element appears twice in a list
-//outputs the one that appears once\
+//outputs the one that appears once O(n) run time O(n) memory
 var singleNumber = function(nums) {
     let hashMap = {}
     
@@ -23,6 +23,7 @@ var singleNumber = function(nums) {
 
 //Solution for lc #217: contains duplicate
 //checks if an array of numbers contains a duplicate
+// O(n) time  o(n) space complexity
 var containsDuplicate = function(nums){
     let hash = {};
 
@@ -39,3 +40,26 @@ var containsDuplicate = function(nums){
 //console.log(containsDuplicate(nums1))
 
 
+
+
+
+//Solution for lc #1:Two Sum
+//uses hash table too save all the numbers and then check for complement
+// target-hash[nums[i]]; if complement exists return it
+var twoSum  = function(nums,target){
+    let vals = {};
+
+    for (let i = 0; i < nums.length; i++) {
+      if (target - nums[i] in vals) {
+        
+        return [vals[target-nums[i]], i];
+        
+      } else {
+        vals[nums[i]] = i;
+      }
+    }
+    return [];
+}
+
+list = [1,3,5,99,36];
+console.log(twoSum(list,135))
