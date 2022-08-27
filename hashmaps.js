@@ -62,4 +62,23 @@ var twoSum  = function(nums,target){
 }
 
 list = [1,3,5,99,36];
-console.log(twoSum(list,135))
+//console.log(twoSum(list,135))
+
+
+
+
+
+var productExceptSelf = function(nums) {
+    let map = {};
+
+    for(let i = 0; i < nums.length; i++){
+        if(!(i in map)){
+            map[i] =list[i];
+        }
+    }return map;
+
+};
+
+let newMap = (productExceptSelf(list));
+
+console.log(newMap[1]);
