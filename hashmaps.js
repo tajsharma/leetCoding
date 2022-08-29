@@ -67,7 +67,7 @@ list = [1,3,5,99,36];
 
 
 
-
+//return to work on this later (its a medium)
 var productExceptSelf = function(nums) {
     let map = {};
 
@@ -82,3 +82,9 @@ var productExceptSelf = function(nums) {
 let newMap = (productExceptSelf(list));
 
 console.log(newMap[1]);
+
+
+//LC #242: Valid Anagram
+var isAnagram = function(s, t) {
+    
+};
