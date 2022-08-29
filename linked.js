@@ -1,5 +1,7 @@
 //lc #21: Merge Two sorted lists
-
+//intialize dummy node for the head and current variable for tracking
+//while loop to compare each item on the list; shifting pointers
+//if lists have nodes to compare after; merge the remaining nodes
 var mergeTwoLists = function(list1, list2) {
     var Dummy = {var:-1, next:  null};
     let current = Dummy;
