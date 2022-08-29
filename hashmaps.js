@@ -79,12 +79,32 @@ var productExceptSelf = function(nums) {
 
 };
 
-let newMap = (productExceptSelf(list));
-
-console.log(newMap[1]);
+//let newMap = (productExceptSelf(list));
+//console.log(newMap[1]);
 
 
 //LC #242: Valid Anagram
 var isAnagram = function(s, t) {
-    
+    let map1 ={}, map2={};
+
+    for(let i=0; i<s.length; i++){
+        map1[s[i]] = map1[s[i]] +1 || 1;
+    }
+
+    for(let i=0; i<s.length; i++){
+        map2[s[i]] = map2[s[i]] +1 || 1;
+    }
+    if(map1 == map2){
+        return true;
+    }else{
+        return false;
+    }
 };
+
+
+let s = "anagram", t = "nagaram"
+
+console.log(isAnagram(s,t));
+
+
+
