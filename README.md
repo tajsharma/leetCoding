@@ -1,2 +1,2 @@
 # leetCoding
-Collection of solved leetCode questions, data structures and algorithms
+Collection of solved or unsolved(for now) leetCode questions, data structures and algorithms xD
