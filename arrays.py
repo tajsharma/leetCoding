@@ -11,6 +11,18 @@ class Solutions:
                 maxProfit = max(maxProfit,prices[i]-minimum)
         return maxProfit
 
+
+
+# CTCI 1.3 : method to replace white space with %20 
+#takes in a string and a given length, makes a shallow copy of the list
+#with the given length parameters; gives back a list of given length
+    def URLify(sent, length):
+        return sent[:length].replace(' ', '%20')
+
+
+
+#Driver code 
 lebron = Solutions
 
-print(lebron.bestTime([10,1,9,3,5,12,2]))
+string1 = "Mr John Smith    "
+print(lebron.URLify(string1,13))
