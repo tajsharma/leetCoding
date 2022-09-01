@@ -26,3 +26,5 @@ lebron = Solutions
 
 string1 = "Mr John Smith    "
 print(lebron.URLify(string1,13))
+
+#edit from mac 
