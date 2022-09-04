@@ -12,9 +12,19 @@ class LinkedList:
         while printval is not None:
             print(printval.dataval)
             printval = printval.nextval
-        
 
 
+#need to fix this class ***
+    def hasCycle(self, head):
+        hashSet = {}
+
+        while head:
+            if head in hashSet: return True
+            hashSet[head]=True
+            head=head.next
+        return False
+
+#intitializes a linked list with a cycle 
 list1 = LinkedList()
 list1.headval = Node(1)
 j = Node(2)
@@ -24,5 +34,8 @@ list1.headval.nextval = j
 j.nextval = k
 k.nextval = l
 l.nextval = None
+#########################################
 
-list1.listprint()
+
+print(list1.hasCycle(list1))
+
