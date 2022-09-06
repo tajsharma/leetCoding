@@ -30,7 +30,8 @@ var majorityElement2 = function(nums) {
     
 };
 
-//let arr = [2,3,4,3,3,2,3];
+let arr = [2,3,4,3,3,2,3];
+console.log(majorityElement(arr))
 
 
 
