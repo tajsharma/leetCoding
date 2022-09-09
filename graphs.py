@@ -1,7 +1,7 @@
 from logging.config import valid_ident
 
 
-
+#initializes node with a values pointing to the left and right node
 class treeNode:
     self.val = val
     self.left = left
