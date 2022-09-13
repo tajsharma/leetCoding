@@ -21,10 +21,24 @@ class Solutions:
 
 
 
+    
+    def productExceptSelf(nums):
+        prefix = [1] * len(nums)
+        for i in range (1,len(nums)):
+            prefix[i] = prefix[i-1] * nums[i-1]      
+        
+        suffix = 1
+        for i in range(len(nums) - 1, -1, -1):
+            prefix[i] *= suffix
+            suffix = suffix * nums[i]
+        return(prefix)
+
+
+
 #Driver code 
 lebron = Solutions
 
-string1 = "Mr John Smith    "
-print(lebron.URLify(string1,13))
 
-#edit from mac 
+array1 = [1,2,3,4]
+
+print(lebron.productExceptSelf(array1))
