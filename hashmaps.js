@@ -62,7 +62,7 @@ var twoSum  = function(nums,target){
 }
 
 list = [1,3,5,99,36];
-//console.log(twoSum(list,135))
+console.log(twoSum(list,4))
 
 
 
