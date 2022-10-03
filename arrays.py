@@ -37,6 +37,7 @@ class Solutions:
         return(prefix)
 
 
+#solves threesum using two pointers
     def threeSum(nums):
         sol = []
         nums.sort()
@@ -52,7 +53,7 @@ class Solutions:
                 elif three < 0:
                     l = l+1
                 else:
-                    sol.append([a,nums[l],nums[r]])
+                    sol.append([a,nums[l],nums[r]])#keeps number from repeating in the same sequence
                     l = l+1
                     while nums[l] == nums[l-1] and l<r:
                         l +=1
