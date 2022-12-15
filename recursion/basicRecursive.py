@@ -13,3 +13,4 @@ def third():
 def fourth():
     print("this the base case")
 
+first()
