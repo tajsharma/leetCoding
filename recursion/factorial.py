@@ -6,4 +6,4 @@ def factorial(n):
 
 
         
-print(factorial(4))
+print(factorial(-2))
