@@ -4,4 +4,4 @@ def sumofDigits(n):
     else:
         return n%10 + sumofDigits(n//10)
 
-print(sumofDigits(4291))
+print(sumofDigits(-4291))
