@@ -1,5 +1,5 @@
 def powerofNums(n,power):
-    assert int(n)== n and power>0, 'error with entries'
+    assert int(power)== power and power>0, 'error with entries'
     if power == 1:
         return n 
     else:
