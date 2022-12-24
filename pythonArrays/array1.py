@@ -15,3 +15,8 @@ arr1.append(99)
 #4 insert a value into the array after the index provided
 arr1.insert(1,69)
 print(arr1)
+
+#5 use extend method to add multiple values
+arr2 = array('i',[23,6,45,34,41])
+arr1.extend(arr2)
+print(arr1)
