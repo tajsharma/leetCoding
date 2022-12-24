@@ -53,6 +53,5 @@ print(arr1.tolist())
 arr2 = arr1[2:6]
 print(arr2)
 
-strTemp = arr1.tostring()
-print(strTemp)
+
 
