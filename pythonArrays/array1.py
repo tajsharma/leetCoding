@@ -1,6 +1,6 @@
 from array import *
 
-arr1 = array('i',['a',23,13,124])
+arr1 = array('i',[77,23,13,124])
 
-for i in arr1:
-    print(i)
+arr1.remove(77)
+print(arr1)
