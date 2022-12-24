@@ -45,3 +45,14 @@ print(arr1.buffer_info())
 
 #12 check for # of occurances using count()
 print(arr1.count(11))
+
+#13 convert to python list
+print(arr1.tolist())
+
+#14 slice the array
+arr2 = arr1[2:6]
+print(arr2)
+
+strTemp = arr1.tostring()
+print(strTemp)
+
