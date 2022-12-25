@@ -23,7 +23,7 @@ print(arr1)
 
 
 #6 add items to array from a list using fromlist()
-listDec = [1,11,21]
+listDec = [23,11,23]
 arr1.fromlist(listDec)
 print(arr1)
 
@@ -34,7 +34,7 @@ arr1.remove(124)
 arr1.pop()
 
 #9 fetch an index of an element using index() method
-print(arr1.index(23))
+print('23 is at location',arr1.index(23))
 
 #10 reverse a python list using reverse()
 arr1.reverse()
