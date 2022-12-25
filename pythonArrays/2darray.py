@@ -8,9 +8,11 @@ neew = np.insert(new,3, [3,3,3,3],axis=0)
 def accessElement(row, col, array2d):
     return array2d[row][col]
 
-def printall(array2d):
-    for i in reversed(array2d):
-        for j in reversed(i):
-            print(j)
+def linearSearch(array2d,num):
+    for i in array2d:
+        for j in i:
+            if j == num: 
+                return 'Your element has been found'
+    return 'we couldnt find that number boss'
 
-printall(neew)
+print(linearSearch(neew,2323))
