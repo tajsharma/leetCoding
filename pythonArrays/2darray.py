@@ -8,7 +8,9 @@ neew = np.insert(new,3, [3,3,3,3],axis=0)
 def accessElement(row, col, array2d):
     return array2d[row][col]
 
-rowN = int(input("enter the row number u want to see"))
-colN = int(input("now enter the column number"))
+def printall(array2d):
+    for i in reversed(array2d):
+        for j in reversed(i):
+            print(j)
 
-print("The number u landed on is: ", accessElement(rowN,colN, new))
+printall(neew)
