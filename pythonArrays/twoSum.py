@@ -7,3 +7,8 @@ def twoSum(array1, target):
         if target-array1[i] in thisDict:
             return 'yes we have'
     return 'not found bro'
+
+sum1 = 10
+array1 = [1,23,42,6,4,5]
+
+print(twoSum(array1,sum1))
