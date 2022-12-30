@@ -5,11 +5,10 @@ def twoSum(array1, target):
             thisDict[array1.index(number)] = number
     for i in range(0,len(array1)):
         if target-array1[i] in thisDict:
-            print(thisDict)
-            return 'yes we have'
+            return thisDict[target], thisDict[array1[i]]
     return 'not found bro'
 
 sum1 = 10
 array1 = [1,23,42,6,4,5]
-
 print(twoSum(array1,sum1))
+
