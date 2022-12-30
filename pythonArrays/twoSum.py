@@ -9,7 +9,7 @@ def twoSum(array1, target):
             return 'yes we have'
     return 'not found bro'
 
-sum1 = 231
+sum1 = 10
 array1 = [1,23,42,6,4,5]
 
 print(twoSum(array1,sum1))
