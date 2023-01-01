@@ -8,5 +8,5 @@ def allUnqiue(list1):
             newList.append(list1[i])
     return 'All uniques'
 
-myList = [0,1,23,423,12,6,23]
+myList = [1,2,3,1]
 print(allUnqiue(myList))
