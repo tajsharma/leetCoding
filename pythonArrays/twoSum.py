@@ -2,10 +2,10 @@ def twoSum(array1, target):
     thisDict = {}
     for number in array1:
         if number not in thisDict:
-            thisDict[array1.index(number)] = number
+            thisDict[number] = number
     for i in range(0,len(array1)):
         if target-array1[i] in thisDict:
-            return thisDict[target], thisDict[array1[i]]
+            return thisDict[target-array1[i]], thisDict[array1[i]]
     return 'not found bro'
 
 sum1 = 10
