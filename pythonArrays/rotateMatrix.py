@@ -8,8 +8,6 @@ def rotate90(array2d):
 
 
 
-og = np.array[[[1,2,3],
-                [4,5,6],
-                [7,8,9]]]
+og = np.array[[[1,2,3],[4,5,6],[7,8,9]]]
     
-print(rotate90(og))
+print(len(og))
