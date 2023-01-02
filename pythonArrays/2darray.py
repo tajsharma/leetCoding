@@ -16,6 +16,6 @@ def linearSearch(array2d,num):
     return 'we couldnt find that number boss'
 
 
-
+print(len(new))
 
 print(linearSearch(neew,2323))
