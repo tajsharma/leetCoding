@@ -12,6 +12,7 @@ print(searchDict(myDict,'Lebron James'))
 
 #deletion
 print(myDict.pop('MVP3'))
+print(myDict)
 
 #add value
 myDict['MVP4'] = 'Lukas Doncic'
