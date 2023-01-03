@@ -1,4 +1,4 @@
-myDict = {'student1':'Lebron James', 'student2':'Stephen Curry', 'student3':'Kevin Durant'}
+myDict = {'MVP1':'Lebron James', 'MVP2':'Stephen Curry', 'MVP3':'Kevin Durant'}
 
 #linear search 
 def searchDict(dict, value):
@@ -7,10 +7,16 @@ def searchDict(dict, value):
             return True
     return False
 
-print(searchDict(myDict,'Lebron J2ames'))
 
+print(searchDict(myDict,'Lebron James'))
 
 #deletion
-print(myDict.pop())
+print(myDict.pop('MVP3'))
+
+#add value
+myDict['MVP4'] = 'Lukas Doncic'
+
+
+
 myDict.fromkeys()
 print(myDict)
