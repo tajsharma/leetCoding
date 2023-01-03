@@ -11,6 +11,6 @@ print(searchDict(myDict,'Lebron J2ames'))
 
 
 #deletion
-print(myDict.popitem())
+print(myDict.pop('student2'))
 
 print(myDict)
