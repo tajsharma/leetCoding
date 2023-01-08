@@ -18,6 +18,7 @@ print(myDict)
 myDict['MVP4'] = 'Lukas Doncic'
 
 
-
-myDict.fromkeys()
-print(myDict)
+copyofDict = myDict.copy()
+print(copyofDict)
+copyofDict.clear()
+print(copyofDict)
