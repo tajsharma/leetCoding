@@ -1,12 +1,12 @@
 class Graph:
-    #imeplementation of a graph using pythong dictionaries
+    #implementation of a graph using pythong dictionaries
     def __init__(self, graphDict = None): 
         if graphDict is None:            
             graphDict = {}
-        self.graphDict = graphDict       #if it already has values, it leaves it 
+        self.graphDict = graphDict   #if it already has values, it leaves it 
 
-    def addEdge(self,vertex,edge):
-        self.graphDict[vertex].append(edge)
+    def addEdge(self,start_vertex,goal_vertex): #draws/creates an edge between provided vertices
+        self.graphDict[start_vertex].append(goal_vertex)
 
 
 customDict = {
@@ -18,4 +18,6 @@ customDict = {
     "f": ["d","e"]
 }
 
-my = Graph(customDict)
+myGraph = Graph(customDict)
+myGraph.addEdge("e","a")
+print(myGraph.graphDict["e"])
