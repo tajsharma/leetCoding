@@ -43,8 +43,8 @@ customDict = {
 
 myGraph = Graph(customDict)
 myGraph.addEdge("e","a")
-print(myGraph.graphDict)
+#print(myGraph.graphDict)
 myGraph.addVertex("k")
-print(myGraph.graphDict)
+#print(myGraph.graphDict)
 myGraph.addEdge("e","k")
-print(myGraph.graphDict)
+print(myGraph.bfs("a"))
