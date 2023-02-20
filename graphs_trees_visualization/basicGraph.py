@@ -6,8 +6,11 @@ class Graph:
         self.graphDict = graphDict   #if it already has values, it leaves it 
 
     def addEdge(self,start_vertex,goal_vertex): #draws/creates an edge between provided vertices
-        self.graphDict[start_vertex].append(goal_vertex)
-
+        if start_vertex not in self.graphDict.keys() and goal_vertex not in self.graphDict.keys(): #checks if both are vertices in the graph
+            self.graphDict[start_vertex].append(goal_vertex)
+            self.graphDict[goal_vertex].append(start_vertex)
+            return True
+        return False     
 
     def addVertex(self,vertex):
         if vertex not in self.graphDict.keys():#check if its already in the graph looking at the key names
@@ -30,5 +33,4 @@ print(myGraph.graphDict)
 myGraph.addVertex("k")
 print(myGraph.graphDict)
 myGraph.addEdge("e","k")
-myGraph.addEdge("k","e")
 print(myGraph.graphDict)
