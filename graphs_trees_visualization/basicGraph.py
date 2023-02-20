@@ -19,11 +19,11 @@ class Graph:
         return False #if not added to the graph
 
     def bfs(self,start_vertex):
-        visited = [start_vertex]
-        queue = [start_vertex]
+        visited = [start_vertex]                                     
+        queue = [start_vertex]                                       
         while queue:#while queue is not empty 
             dq_vertex = queue.pop(0)
-            print(dq_vertex)
+            print(dq_vertex)                                         
             for adj_vertex in self.graphDict[dq_vertex]:
                 if adj_vertex not in visited:
                     visited.append(adj_vertex)
