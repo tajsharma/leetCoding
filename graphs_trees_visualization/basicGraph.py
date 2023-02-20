@@ -18,6 +18,9 @@ class Graph:
             return True #if added
         return False #if not added to the graph
 
+    def bfs(self):
+        pass
+
 customDict = {
     "a": ["b","c"],
     "b": ["a","d","e"],
