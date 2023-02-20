@@ -9,6 +9,12 @@ class Graph:
         self.graphDict[start_vertex].append(goal_vertex)
 
 
+    def addVertex(self,vertex):
+        if vertex not in self.graphDict.keys():#check if its already in the graph looking at the key names
+            self.graphDict[vertex] = []
+            return True #if added
+        return False #if not added to the graph
+
 customDict = {
     "a": ["b","c"],
     "b": ["a","d","e"],
@@ -20,4 +26,9 @@ customDict = {
 
 myGraph = Graph(customDict)
 myGraph.addEdge("e","a")
-print(myGraph.graphDict["e"])
+print(myGraph.graphDict)
+myGraph.addVertex("k")
+print(myGraph.graphDict)
+myGraph.addEdge("e","k")
+myGraph.addEdge("k","e")
+print(myGraph.graphDict)
