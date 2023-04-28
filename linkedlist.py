@@ -13,6 +13,27 @@ class LinkedList:
             print(printval.dataval)
             printval = printval.nextval
 
+    def OddEvenLL(self,head):
+        if not head:
+            return head
+
+
+        odd = head
+        even = head.nextval
+        e_head = even
+
+        while even and even.nextval:
+            odd.nextval = odd.nextval.nextval
+            odd = odd.nextval
+            even.nextval = even.nextval.nextval
+            even = even.nextval
+
+        odd.nextval = e_head
+
+        return head
+        
+
+
 
 #need to fix this class ***
     def hasCycle(self, head):
@@ -27,15 +48,20 @@ class LinkedList:
 #intitializes a linked list with a cycle 
 list1 = LinkedList()
 list1.headval = Node(1)
-j = Node(2)
-k = Node(45)
-l = Node("last")
-list1.headval.nextval = j
-j.nextval = k
-k.nextval = l
-l.nextval = None
-#########################################
+one = Node(2)
+two = Node(45)
+three = Node(99)
+four = Node(12)
+five = Node(63)
+list1.headval.nextval = one
+one.nextval = two
+two.nextval = three
+three.nextval = four
+four.nextval = five
+five.nextval = None
 
 
-print(list1.listprint())
+
+newhead = list1.OddEvenLL(list1.headval)
+print(newhead.dataval)
 
