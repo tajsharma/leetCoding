@@ -37,5 +37,5 @@ l.nextval = None
 #########################################
 
 
-print(list1.hasCycle(list1))
+print(list1.listprint())
 
