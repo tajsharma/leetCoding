@@ -7,13 +7,13 @@ class ArraySolvers:
         maxSum = float('-inf')
         currentSum = 0
 
-        for i in range (0,len(nums)-1):
-            currentSum += nums[i]
-            for j in range(i+1,len(nums)-1):
-                currentSum+=nums[j]
-                if currentSum > maxSum:
-                    maxSum = currentSum
-                    print("current max is: ", maxSum)
-            currentSum = 0
+        for num in nums:
+            currentSum += num 
 
-        return maxSum
+            if currentSum > maxSum:
+                maxSum = currentSum
+            
+            if currentSum < 0:
+                currentSum = 0
+
+        return maxSum 
