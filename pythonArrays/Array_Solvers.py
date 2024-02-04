@@ -3,7 +3,7 @@ class ArraySolvers:
     def __init__(self):
         pass
     
-    def maximum_Subarray_BF(self,nums):
+    def maximum_Subarray(self,nums):
         maxSum = float('-inf')
         currentSum = 0
 
